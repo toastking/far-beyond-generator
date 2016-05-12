@@ -1,0 +1,14 @@
+{
+  "name": "far-beyond-generator",
+  "version": "1.0.0",
+  "description": "Generate Far Beyond Memes",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthew Del Signore",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
