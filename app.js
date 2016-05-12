@@ -2,6 +2,9 @@
 var express = require('express');
 var app = express();
 
+app.set('port', (process.env.PORT || 5000));
+
+
 app.use('/images',express.static('images'));
 //Store all HTML files in view folder.
 app.use('/js',express.static('js'));
@@ -11,6 +14,6 @@ app.get('/', function(req, res) {
   res.sendFile(__dirname+'/index.html');
 });
 
-app.listen(8080, function () {
-  console.log('Server running on port 8080');
+app.listen(app.get('port'), function () {
+  console.log('Server running on port ' + app.get('port');
 });
